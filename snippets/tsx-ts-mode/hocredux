@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: hocComponentWithRedux
+# key: hocredux
+# description: Creates a Hoc Component with Redux 
+# --
+`(if (bound-and-true-p react-import) 
+     "import React from 'react'\nimport { connect } from 'react-redux'\nimport PropTypes from 'prop-types'"
+     "import { connect } from 'react-redux'\nimport PropTypes from 'prop-types'")`
+     
+export const mapStateToProps = state => ({})
+
+export const mapDispatchToProps = {}
+
+export const ${1:name} = (WrappedComponent) => {
+  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />
+  
+  hocComponent.propTypes = {}
+  
+  return hocComponent
+}
+
+export default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)($1(WrapperComponent))

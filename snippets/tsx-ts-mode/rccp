@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: reactClassComponentPropTypes
+# key: rccp
+# description: Creates a React component class with PropTypes and ES7 module system
+# --
+`(if (bound-and-true-p react-import) 
+     "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'"
+     "import { Component } from 'react'\nimport PropTypes from 'prop-types'")`
+
+export default class ${1:`(file-name-sans-extension (buffer-name))`} extends Component {
+  static propTypes = {${2:name}: ${3:propType}}
+
+  render() {
+    return (
+      `(if (bound-and-true-p react-fragment) 
+           "<>" "<div>")`$0`(if (bound-and-true-p react-fragment) "</>" "</div>")`
+    )
+  }
+}
+

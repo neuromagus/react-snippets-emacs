@@ -2,8 +2,8 @@
 # This snippet is licensed under the BSD 3-Clause License.
 # For full license text, see the LICENSE file in the root directory of this project.
 # contributor: neuromagus
-# name: typescriptReactClassComponent
-# key: tsrcc
+# name: typescriptReactClassExportComponent
+# key: tsrce
 # description: Creates a React component class with ES7 module system and TypeScript interfaces
 # --
 `(if (bound-and-true-p react-import)
@@ -14,7 +14,7 @@
 
 type State = {}
 
-export default class ${1:`(file-name-sans-extension (buffer-name))`} extends Component<Props, State> {
+class ${1:`(file-name-sans-extension (buffer-name))`} extends Component<Props, State> {
   state = {}
 
   render() {
@@ -24,3 +24,4 @@ export default class ${1:`(file-name-sans-extension (buffer-name))`} extends Com
     )
   }
 }
+

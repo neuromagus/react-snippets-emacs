@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: hocComponent
+# key: hoc
+# description: Creates a Hoc Component
+# --
+`(if (bound-and-true-p react-import) 
+     "import React from 'react'\nimport PropTypes from 'prop-types'"
+     "import PropTypes from 'prop-types'")`
+     
+export default (WrappedComponent) => {
+  const hocComponent = ({ ...props }) => <WrappedComponent {...props} />   
+  
+  hocComponent.propTypes = {}
+  
+  return hocComponent
+}
+

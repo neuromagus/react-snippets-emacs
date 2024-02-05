@@ -1,0 +1,35 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: typescriptReactClassComponentRedux
+# key: tsrcredux
+# description: Creates a React component class with connected redux and ES7 module system and TypeScript interfaces
+# --
+`(if (bound-and-true-p react-import)
+        (format "import { connect } from 'react-redux'
+                 import React, { Component } from 'react'
+
+                 type Props = {}")
+         (format "import { connect } from 'react-redux'
+                  
+                  type Props = {}"))`
+
+type State = {}
+
+export class ${1:`(file-name-sans-extension (buffer-name))`} extends Component<Props, State> {
+  state = {}
+
+  render() {
+    return (
+    `(if (bound-and-true-p react-fragment)
+         "<>" "<div>")`$0`(if (bound-and-true-p react-fragment) "</>" "</div>")`
+    )
+  }
+}
+
+const mapStateToProps = (state) => ({})
+
+const mapDispatchToProps = {}
+
+export default connect(mapStateToProps, mapDispatchToProps)($1)

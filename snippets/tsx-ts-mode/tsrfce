@@ -2,25 +2,21 @@
 # This snippet is licensed under the BSD 3-Clause License.
 # For full license text, see the LICENSE file in the root directory of this project.
 # contributor: neuromagus
-# name: typescriptReactClassComponent
-# key: tsrcc
-# description: Creates a React component class with ES7 module system and TypeScript interfaces
+# name: typescriptReactFunctionalExportComponent
+# key: tsrfce
+# description: Creates a React Functional Component with ES7 module system and TypeScript interface
 # --
 `(if (bound-and-true-p react-import)
-        (format "import React, { Component } from 'react'
+        (format "import React from 'react'
 
                  type Props = {}")
          "type Props = {}")`
 
-type State = {}
-
-export default class ${1:`(file-name-sans-extension (buffer-name))`} extends Component<Props, State> {
-  state = {}
-
-  render() {
-    return (
+function ${1:`(file-name-sans-extension (buffer-name))`}({}: Props) {
+  return (
     `(if (bound-and-true-p react-fragment)
          "<>" "<div>")`$0`(if (bound-and-true-p react-fragment) "</>" "</div>")`
-    )
-  }
+  )
 }
+
+export default $1

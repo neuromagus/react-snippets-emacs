@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: reactNativeFunctionalExportComponentWithStyles
+# key: rnfes
+# description: Creates a React Native Functional Component with Export and Styles
+# --
+`(if (bound-and-true-p react-import) 
+     "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'"
+     "import { StyleSheet, Text, View } from 'react-native'")`
+
+const ${1:`(file-name-sans-extension (buffer-name))`} = () => {
+  return (
+    <View>
+      <Text>$0</Text>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({})
+
+export default $1

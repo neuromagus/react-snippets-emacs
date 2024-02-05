@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# This snippet is licensed under the BSD 3-Clause License.
+# For full license text, see the LICENSE file in the root directory of this project.
+# contributor: neuromagus
+# name: typescriptReactNativeArrowFunctionComponentWithStyles
+# key: tsrnfs
+# description: Creates a React Native Arrow Function Component with ES7 module system in TypeScript and StyleSheet
+# --
+`(if (bound-and-true-p react-import) 
+     "import React from 'react'\nimport { Text, StyleSheet, View } from 'react-native'"
+     "import { Text, StyleSheet, View } from 'react-native'")`
+     
+type Props = {}
+
+const ${1:`(file-name-sans-extension (buffer-name))`} = (props: Props) =>  {
+  return (
+    <View>
+      <Text>$0</Text>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({})
+
+export default $1
