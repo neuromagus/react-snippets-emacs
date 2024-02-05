@@ -1,5 +1,5 @@
 # react-snippets-emacs
-###React/Redux/React-Native snippets with Typescript support 
+React/Redux/React-Native snippets with Typescript support 
 
 ## Installation
 
