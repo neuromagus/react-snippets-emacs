@@ -9,7 +9,7 @@
 `(if (bound-and-true-p react-import) "import React from 'react'\n\n")`export default function ${1:`(file-name-sans-extension (buffer-name))`} () {
   return (
     `(if (bound-and-true-p react-fragment) 
-         "<>" "<div>")`$0`(if (bound-and-true-p react-fragment) "</>" "</div>")`
+         "<>" "<div>")`${0:$1}`(if (bound-and-true-p react-fragment) "</>" "</div>")`
   )
 }
 

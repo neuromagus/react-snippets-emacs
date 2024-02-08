@@ -15,7 +15,7 @@ type Props = {}
 const ${1:`(file-name-sans-extension (buffer-name))`} = (props: Props) =>  {
   return (
     <View>
-      <Text>$0</Text>
+      <Text>${0:$1}</Text>
     </View>
   )
 }
