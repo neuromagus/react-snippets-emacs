@@ -15,14 +15,14 @@ For expand a snippet without autocompletion add this option:
 )
 ```
 
-For remove  ```import React from 'react'``` add to ```init.el```:
+For insert  ```import React from 'react'``` add to ```init.el```:
 ```
 (setq react-import t)
 ```
 
-For replace ```<div>``` to React Fragments ```<></>``` add to ```init.el```:
+For replace  React Fragments ```<></>``` to ```<div>``` add to ```init.el```:
 ```
-(setq react-fragment t)
+(setq react-fragments-todiv t)
 ```
 
 Enjoy ;)
