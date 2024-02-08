@@ -14,8 +14,8 @@
 
 const ${1:`(file-name-sans-extension (buffer-name))`} = (props: Props) => {
   return (
-    `(if (bound-and-true-p react-fragment)
-         "<>" "<div>")`${0:$1}`(if (bound-and-true-p react-fragment) "</>" "</div>")`
+    `(if (bound-and-true-p react-fragments-todiv)
+         "<div>" "<>")`${0:$1}`(if (bound-and-true-p react-fragments-todiv) "</div>" "</>")`
   )
 }
 
