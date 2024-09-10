@@ -12,7 +12,7 @@
                  type Props = {}")
          "type Props = {}")`
 
-function ${1:`(file-name-sans-extension (buffer-name))`}({}: Props) {
+function ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-name)))`}({}: Props) {
   return (
     `(if (bound-and-true-p react-fragments-todiv)
          "<div>" "<>")`${0:$1}`(if (bound-and-true-p react-fragments-todiv) "</div>" "</>")`

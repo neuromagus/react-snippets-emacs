@@ -17,7 +17,7 @@
 
 type State = {}
 
-export class ${1:`(file-name-sans-extension (buffer-name))`} extends Component<Props, State> {
+export class ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-name)))`} extends Component<Props, State> {
   state = {}
 
   render() {

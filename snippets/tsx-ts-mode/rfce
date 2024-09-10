@@ -6,7 +6,7 @@
 # key: rfce
 # description: Creates a React Functional Component with ES7 module system
 # --
-`(if (bound-and-true-p react-import) "import React from 'react'\n\n")`function ${1:`(file-name-sans-extension (buffer-name))`} () {
+`(if (bound-and-true-p react-import) "import React from 'react'\n\n")`function ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-name)))`} () {
   return (
     `(if (bound-and-true-p react-fragments-todiv)
          "<div>" "<>")`${0:$1}`(if (bound-and-true-p react-fragments-todiv) "</div>" "</>")`

@@ -10,7 +10,7 @@
      "import React from 'react'\nimport PropTypes from 'prop-types'"
      "import PropTypes from 'prop-types'")`
 
-function ${1:`(file-name-sans-extension (buffer-name))`}(props) {
+function ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-name)))`}(props) {
   return (
     `(if (bound-and-true-p react-fragments-todiv)
          "<div>" "<>")`${0:$1}`(if (bound-and-true-p react-fragments-todiv) "</div>" "</>")`
