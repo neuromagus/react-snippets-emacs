@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: hocComponent
 # key: hoc
-# description: Creates a Hoc Component
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport PropTypes from 'prop-types'"

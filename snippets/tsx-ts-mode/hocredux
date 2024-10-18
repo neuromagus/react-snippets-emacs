@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: hocComponentWithRedux
 # key: hocredux
-# description: Creates a Hoc Component with Redux 
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport { connect } from 'react-redux'\nimport PropTypes from 'prop-types'"

@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactClassComponentRedux
 # key: tsrcredux
-# description: Creates a React component class with connected redux and ES7 module system and TypeScript interfaces
 # --
 `(if (bound-and-true-p react-import)
         (format "import { connect } from 'react-redux'

@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactNativeArrowFunctionComponentWithStyles
 # key: tsrnfs
-# description: Creates a React Native Arrow Function Component with ES7 module system in TypeScript and StyleSheet
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport { Text, StyleSheet, View } from 'react-native'"

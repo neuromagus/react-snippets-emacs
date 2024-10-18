@@ -6,7 +6,7 @@ React/Redux/React-Native snippets with Typescript support for [Yasnippet](https:
 Just copy snippets folder to ```~/.config/emacs/snippets```
 
 
-For expand a snippet without autocompletion add this option:
+For expand a snippet without autocompletion or default TAB key, add this option:
 ```
 (use-package yasnippet
   ...

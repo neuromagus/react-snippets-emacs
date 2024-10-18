@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactClassComponent
 # key: tsrcc
-# description: Creates a React component class with ES7 module system and TypeScript interfaces
 # --
 `(if (bound-and-true-p react-import)
         (format "import React, { Component } from 'react'

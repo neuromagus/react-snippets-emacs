@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactClassComponentPropTypes
 # key: rccp
-# description: Creates a React component class with PropTypes and ES7 module system
 # --
 `(if (bound-and-true-p react-import) 
      "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'"

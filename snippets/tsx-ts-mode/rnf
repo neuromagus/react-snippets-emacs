@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactNativeFunctionalComponent
 # key: rnf
-# description: Creates a React Native Functional Component 
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport { Text, View } from 'react-native'"

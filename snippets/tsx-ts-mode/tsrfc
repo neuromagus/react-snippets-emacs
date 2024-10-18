@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactFunctionalComponent
 # key: tsrfc
-# description: Creates a React Functional Component with ES7 module system and TypeScript interface
 # --
 `(if (bound-and-true-p react-import)
         (format "import React from 'react'

@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactFunctionalComponentWithPropTypes
 # key: rfcp
-# description: Creates a React Functional Component with ES7 module system with PropTypes
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport PropTypes from 'prop-types'"

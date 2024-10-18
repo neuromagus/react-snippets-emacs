@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactArrowFunctionComponent
 # key: tsrafc
-# description: Creates a React Arrow Function Component with ES7 module system and TypeScript interface
 # --
 `(if (bound-and-true-p react-import)
         (format "import React from 'react'

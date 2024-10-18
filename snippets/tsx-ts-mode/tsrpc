@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: typescriptReactClassPureComponent
 # key: tsrpc
-# description: Creates a React pure component class with ES7 module system and TypeScript interface
 # --
 `(if (bound-and-true-p react-import)
         (format "import React, { PureComponent } from 'react'

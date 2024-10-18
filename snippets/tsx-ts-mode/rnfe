@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactNativeFunctionalExportComponent
 # key: rnfe
-# description: Creates a React Native Functional Component with Export
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport { View, Text } from 'react-native'"

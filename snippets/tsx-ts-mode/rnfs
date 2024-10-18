@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactNativeFunctionalComponentWithStyles
 # key: rnfs
-# description: Creates a React Native Functional Component with Styles
 # --
 `(if (bound-and-true-p react-import) 
      "import React from 'react'\nimport { Text, StyleSheet, View } from 'react-native'"

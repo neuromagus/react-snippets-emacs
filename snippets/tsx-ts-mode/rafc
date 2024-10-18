@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactArrowFunctionComponent
 # key: rafc
-# description: Creates a React Arrow Function Component with ES7 module system
 # --
 `(if (bound-and-true-p react-import) "import React from 'react'\n\n")`export const ${1:`(file-name-nondirectory (file-name-sans-extension (buffer-name)))`} = () => {
   return (

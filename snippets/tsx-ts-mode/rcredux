@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactClassComponentRedux
 # key: rcredux
-# description: Creates a React component class with connected redux and ES7 module system
 # --
 `(if (bound-and-true-p react-import) 
      "import React, { Component } from 'react'\nimport { connect } from 'react-redux'"

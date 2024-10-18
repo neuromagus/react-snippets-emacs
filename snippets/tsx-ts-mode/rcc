@@ -4,7 +4,6 @@
 # contributor: neuromagus
 # name: reactClassComponent
 # key: rcc
-# description: Creates a React component class with ES7 module system
 # --
 `(if (bound-and-true-p react-import) 
      "import React, { Component } from 'react'"
