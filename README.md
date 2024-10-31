@@ -1,3 +1,5 @@
+## moved to Codeberg - https://codeberg.org/neuromagus/react-snippets-emacs
+
 # react-snippets-emacs
 React/Redux/React-Native snippets with Typescript support for [Yasnippet](https://github.com/joaotavora/yasnippet)
 
